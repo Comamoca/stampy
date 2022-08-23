@@ -64,6 +64,7 @@ Not yet...:zzz:
 ## 📜 ライセンス
 
 MIT
+[SIL Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
 
 ### 🧩 Modules
 
@@ -74,6 +75,8 @@ MIT
 Not yet...:zzz:
 
 ## 💕 スペシャルサンクス
+
+- [M+フォント](https://mplusfonts.github.io/)
 
 - [pillow](https://github.com/python-pillow/Pillow)
 
