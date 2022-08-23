@@ -53,7 +53,3 @@ def main(text: str, color: str = "0, 0, 0"):
     draw.text((0, -20), text, font=font, fill=tup_color)
     draw.text((0, font_size - 20), text2, font=font, fill=tup_color)
     image.save("out.png")
-
-
-if __name__ == "__main__":
-    main()
