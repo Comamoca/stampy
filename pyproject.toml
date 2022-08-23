@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "egoji"
 version = "0.1.0"
-description = ""
+description = "４文字の文字列をスタンプ風画像に変換するツール "
 authors = ["Comamoca <comamoca.dev@gmail.com>"]
 
 [tool.poetry.dependencies]
