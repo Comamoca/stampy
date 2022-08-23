@@ -45,8 +45,11 @@ stampy にゃんにゃん
 ## ⬇️  Install
 
 ```sh
+# PyPIからでもインストール出来ます。
+pipx install stampy
+
 # インストールにはpipxを推奨します。
-pipx install https://github.com/Comamoca/stampy
+pipx install git+https://github.com/Comamoca/stampy
 ```
 
 ## ⛏️   開発
