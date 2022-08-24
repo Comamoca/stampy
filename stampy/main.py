@@ -1,5 +1,6 @@
 from PIL import Image, ImageFont, ImageDraw
 import click
+import os
 import random
 
 
@@ -42,6 +43,18 @@ def divLine(txt: str) -> tuple[str, str]:
 def to_tuple(txt: str) -> tuple[int, ...]:
     str_list = txt.split(",")
     int_list = list(map(int, str_list))
+
+    try:
+        int_list = list(map(int, str_list))
+
+    except ValueError:
+        raise ValueError("数値に変換できない要素が渡されました。")
+        os.exit(1)
+
+    if len(int_list) != 3:
+        raise ValueError("渡された文字列の書式が不正です。")
+        os.exit(1)
+
     int_tuple = tuple(int_list)
 
     return int_tuple
