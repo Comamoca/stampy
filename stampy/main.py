@@ -1,5 +1,21 @@
 from PIL import Image, ImageFont, ImageDraw
 import click
+import random
+
+
+def set_random_color() -> tuple[int, int, int]:
+
+    def rand_col(num: int):
+        num = random.randint(0, 255)
+        return num
+
+    r = 0
+    g = 0
+    b = 0
+
+    color = [r, g, b]
+    color = list(map(rand_col, color))
+    return tuple(color)
 
 
 def divLine(txt: str) -> tuple[str, str]:
