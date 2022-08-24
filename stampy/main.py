@@ -58,6 +58,10 @@ def main(text: str, color: str = "0, 0, 0"):
     tup_color = to_tuple(color)
 
     text, text2 = divLine(text)
+
+    if color == "0, 0, 0":
+        tup_color = set_random_color()
+
     # color = (255, 255, 255)
     # color = (0, 0, 0)
     # blue  = (131, 217, 242)
