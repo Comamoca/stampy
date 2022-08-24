@@ -25,6 +25,7 @@ def divLine(txt: str) -> tuple[str, str]:
 
     line = []
     line2 = []
+
     for i, c in enumerate(txt):
         if i == 0 or i == 2:
             line.append(c)
@@ -69,7 +70,6 @@ def main(text: str, color: str = "0, 0, 0"):
     font_size = 100
 
     tup_color = to_tuple(color)
-
     text, text2 = divLine(text)
 
     if color == "0, 0, 0":
@@ -80,8 +80,11 @@ def main(text: str, color: str = "0, 0, 0"):
     # blue  = (131, 217, 242)
 
     image = Image.new("RGB", (200, 200), (255, 255, 255))
+
     font = ImageFont.truetype(font_path, font_size)
     draw = ImageDraw.Draw(image)
+
     draw.text((0, -20), text, font=font, fill=tup_color)
     draw.text((0, font_size - 20), text2, font=font, fill=tup_color)
+
     image.save("out.png")
