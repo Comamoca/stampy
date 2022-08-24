@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "stampy"
-version = "0.1.2.2"
+version = "0.1.3"
 description = "４文字の文字列をスタンプ風画像に変換するツール "
 authors = ["Comamoca <comamoca.dev@gmail.com>"]
 readme = "README.md"
