@@ -79,7 +79,6 @@ def main(text: str, color: str = "0, 0, 0"):
     # color = (0, 0, 0)
     # blue  = (131, 217, 242)
 
-    # image = Image.open(image_path)
     image = Image.new("RGB", (200, 200), (255, 255, 255))
     font = ImageFont.truetype(font_path, font_size)
     draw = ImageDraw.Draw(image)
