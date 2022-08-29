@@ -2,6 +2,8 @@ from PIL import Image, ImageFont, ImageDraw
 import click
 import os
 import random
+from pathlib import Path
+import pathlib
 
 
 def set_random_color() -> tuple[int, int, int]:
@@ -66,7 +68,7 @@ def to_tuple(txt: str) -> tuple[int, ...]:
 @click.option('--color', help='set color', default="0, 0, 0")
 # @click.argument("text")
 def main(text: str, color: str = "0, 0, 0"):
-    font_path = "rounded-x-mplus-1c-bold.ttf"
+    font_path = str(Path().cwd() / Path("./fonts/rounded-x-mplus-1c-bold.ttf"))
     font_size = 100
 
     tup_color = to_tuple(color)
