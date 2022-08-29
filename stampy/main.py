@@ -5,7 +5,6 @@ import random
 from pathlib import Path
 
 
-def set_random_color() -> tuple[int, int, int]:
 
     def rand_col(num: int):
         num = random.randint(0, 255)
