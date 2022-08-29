@@ -3,7 +3,6 @@ import click
 import os
 import random
 from pathlib import Path
-import pathlib
 
 
 def set_random_color() -> tuple[int, int, int]:
