@@ -54,9 +54,7 @@ def to_tuple(txt: str) -> tuple[int, ...]:
         raise ValueError("渡された文字列の書式が不正です。")
         os.exit(1)
 
-    int_tuple = tuple(int_list)
 
-    return int_tuple
 
 
 @click.command()
