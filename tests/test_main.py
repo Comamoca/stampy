@@ -11,9 +11,7 @@ disallow_str = "にゃんにゃん"
 
 allow_color = "0, 0, 0"
 disallow_color = "0, 0, 0, 0"
-disallow_color_str = "A, A, A"
-
-allow_tuple = (0, 0, 0)
+disallow_color_str = "あ, い, う, え"
 
 
 def test_divLine():
@@ -38,6 +36,7 @@ def test_divLine():
 
 
 def test_to_tuple():
+    allow_tuple = (0, 0, 0)
     assert main.to_tuple(allow_color) == allow_tuple
 
     with raises(ValueError) as e:
@@ -71,3 +70,17 @@ def test_set_radom_color(set_seed):
     color = list(map(random_color, color))
 
     assert main.set_random_color() == (202, 137, 239)
+
+
+def test_toRGB():
+    disallow_hex_color = "244747"
+    allow_hex_color = "#244747"
+
+    rgb_color = (36, 71, 71)
+
+    with raises(ValueError) as e:
+        main.toRGB(disallow_hex_color)
+
+    assert str(e.value) == "引数が16進数ではありません。"
+
+    assert main.toRGB(allow_hex_color) == rgb_color
