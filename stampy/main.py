@@ -23,7 +23,6 @@ def set_random_color() -> tuple[int, int, int]:
 
 def divLine(txt: str) -> tuple[str, str]:
     if len(txt) != 4:
-        raise ValueError
 
     line = []
     line2 = []
