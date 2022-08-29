@@ -42,7 +42,6 @@ def divLine(txt: str) -> tuple[str, str]:
 
 def to_tuple(txt: str) -> tuple[int, ...]:
     str_list = txt.split(",")
-    int_list = list(map(int, str_list))
 
     try:
         int_list = list(map(int, str_list))
